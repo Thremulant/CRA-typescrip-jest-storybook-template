@@ -1,7 +1,14 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'; // Globally added bootstrap
 
 import { withTests } from "@storybook/addon-jest";
 import results from '../src/__tests__/jest-test-results.json';
+
+import { addDecorator } from '@storybook/react'; // <- or your storybook framework
+import { withThemes } from 'storybook-addon-themes/react'; // <- or your storybook framework
+
+
+addDecorator(withThemes);
 
 export const decorators = [
   withTests({
@@ -17,4 +24,24 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  themes: {
+    default: 'MVC',
+    clearable: false,
+    list: [
+      { name: 'MVC', color: '#00aced' },
+      { name: 'Mobile', color: '#3b5998' },
+    ],
+    Decorator: CustomDecorator
+  },
 }
+
+function CustomDecorator(props) {
+  const { children, themeName } = props;
+  return (
+    <>
+      {children}
+      {themeName === 'MVC' && <link rel="stylesheet" href="styles/mvc.css" />}
+      {themeName === 'Mobile' && <link rel="stylesheet" href="styles/mobile.css" />}
+    </>
+  );
+};

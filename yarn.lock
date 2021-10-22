@@ -3294,7 +3294,7 @@
     "prop-types" "^15.7.2"
     "regenerator-runtime" "^0.13.7"
 
-"@storybook/addons@^6.3.0", "@storybook/addons@6.3.12":
+"@storybook/addons@^6.0.0", "@storybook/addons@^6.3.0", "@storybook/addons@6.3.12":
   "integrity" "sha512-UgoMyr7Qr0FS3ezt8u6hMEcHgyynQS9ucr5mAwZky3wpXRPFyUTmMto9r4BBUdqyUvTUj/LRKIcmLBfj+/l0Fg=="
   "resolved" "https://registry.npmjs.org/@storybook/addons/-/addons-6.3.12.tgz"
   "version" "6.3.12"
@@ -3309,7 +3309,7 @@
     "global" "^4.4.0"
     "regenerator-runtime" "^0.13.7"
 
-"@storybook/api@^6.3.0", "@storybook/api@6.3.12":
+"@storybook/api@^6.0.0", "@storybook/api@^6.3.0", "@storybook/api@6.3.12":
   "integrity" "sha512-LScRXUeCWEW/OP+jiooNMQICVdusv7azTmULxtm72fhkXFRiQs2CdRNTiqNg46JLLC9z95f1W+pGK66X6HiiQA=="
   "resolved" "https://registry.npmjs.org/@storybook/api/-/api-6.3.12.tgz"
   "version" "6.3.12"
@@ -3465,7 +3465,7 @@
     "core-js" "^3.8.2"
     "global" "^4.4.0"
 
-"@storybook/components@^6.3.0", "@storybook/components@6.3.12":
+"@storybook/components@^6.0.0", "@storybook/components@^6.3.0", "@storybook/components@6.3.12":
   "integrity" "sha512-kdQt8toUjynYAxDLrJzuG7YSNL6as1wJoyzNUaCfG06YPhvIAlKo7le9tS2mThVFN5e9nbKrW3N1V1sp6ypZXQ=="
   "resolved" "https://registry.npmjs.org/@storybook/components/-/components-6.3.12.tgz"
   "version" "6.3.12"
@@ -3572,7 +3572,7 @@
     "util-deprecate" "^1.0.2"
     "webpack" "4"
 
-"@storybook/core-events@^6.3.0", "@storybook/core-events@6.3.12":
+"@storybook/core-events@^6.0.0", "@storybook/core-events@^6.3.0", "@storybook/core-events@6.3.12":
   "integrity" "sha512-SXfD7xUUMazaeFkB92qOTUV8Y/RghE4SkEYe5slAdjeocSaH7Nz2WV0rqNEgChg0AQc+JUI66no8L9g0+lw4Gw=="
   "resolved" "https://registry.npmjs.org/@storybook/core-events/-/core-events-6.3.12.tgz"
   "version" "6.3.12"
@@ -3810,7 +3810,7 @@
     "prettier" "~2.2.1"
     "regenerator-runtime" "^0.13.7"
 
-"@storybook/theming@^6.3.0", "@storybook/theming@6.3.12":
+"@storybook/theming@^6.0.0", "@storybook/theming@^6.3.0", "@storybook/theming@6.3.12":
   "integrity" "sha512-wOJdTEa/VFyFB2UyoqyYGaZdym6EN7RALuQOAMT6zHA282FBmKw8nL5DETHEbctpnHdcrMC/391teK4nNSrdOA=="
   "resolved" "https://registry.npmjs.org/@storybook/theming/-/theming-6.3.12.tgz"
   "version" "6.3.12"
@@ -6639,7 +6639,7 @@
   "resolved" "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz"
   "version" "2.6.12"
 
-"core-js@^3.0.4", "core-js@^3.8.2":
+"core-js@^3.0.4", "core-js@^3.6.4", "core-js@^3.8.2":
   "integrity" "sha512-tReEhtMReZaPFVw7dajMx0vlsz3oOb8ajgPoHVYGxr8ErnZ6PcYEvvmjGmXlfpnxpkYSdOQttjB+MvVbCGfvLw=="
   "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.18.3.tgz"
   "version" "3.18.3"
@@ -15349,6 +15349,20 @@
     "@storybook/components" "^6.3.0"
     "@storybook/core-events" "^6.3.0"
     "ts-dedent" "^2.1.1"
+
+"storybook-addon-themes@^6.1.0":
+  "integrity" "sha512-ZT8aNgrwFVNEOmOPBLNS0WBacjvMFo/bZ83P8MmsJ3Ewqt0AbmPioghTZccARUn/EQ+LrDxyh2D0QgmLaKo07Q=="
+  "resolved" "https://registry.npmjs.org/storybook-addon-themes/-/storybook-addon-themes-6.1.0.tgz"
+  "version" "6.1.0"
+  dependencies:
+    "@storybook/addons" "^6.0.0"
+    "@storybook/api" "^6.0.0"
+    "@storybook/components" "^6.0.0"
+    "@storybook/core-events" "^6.0.0"
+    "@storybook/theming" "^6.0.0"
+    "core-js" "^3.6.4"
+    "global" "^4.4.0"
+    "memoizerific" "^1.11.3"
 
 "stream-browserify@^2.0.1":
   "integrity" "sha512-nX6hmklHs/gr2FuxYDltq8fJA1GDlxKQCz8O/IM4atRqBH8OORmBNgfvW5gG10GT/qQ9u0CzIvr2X5Pkt6ntqg=="

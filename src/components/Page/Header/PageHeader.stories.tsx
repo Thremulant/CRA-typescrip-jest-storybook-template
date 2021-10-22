@@ -5,7 +5,7 @@ export default {
   title: 'Pages/Page Header',
   component: PageHeader,
   argTypes: {
-    // backgroundColor: { control: 'color' },
+    // 
   },
 };
 
@@ -13,7 +13,6 @@ const Template = (args: any) => <PageHeader {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  name: 'Inew',
   title: 'New page',
 };
 
