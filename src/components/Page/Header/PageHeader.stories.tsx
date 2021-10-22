@@ -11,9 +11,14 @@ export default {
 
 const Template = (args: any) => <PageHeader {...args} />;
 
-export const Main = Template.bind({});
-Main.args = {
+export const Default = Template.bind({});
+Default.args = {
+  name: 'Inew',
   title: 'New page',
+};
+
+Default.parameters = {
+  jest: ['PageHeader.test.tsx'],
 };
 
 export const QuickLinks = Template.bind({});
@@ -24,3 +29,5 @@ QuickLinks.args = {
     { Text: 'Materials', LinkTo: ' ' }
   ]
 };
+
+
